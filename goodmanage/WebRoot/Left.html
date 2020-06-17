@@ -1,0 +1,87 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<TITLE></TITLE>
+<STYLE type=text/css> 
+{
+	FONT-SIZE: 12px
+}
+#menuTree A {
+	COLOR: #566984; TEXT-DECORATION: none
+}
+</STYLE>
+<SCRIPT src="js/TreeNode.js" type=text/javascript></SCRIPT>
+<SCRIPT src="js/Tree.js" type=text/javascript></SCRIPT>
+<META content="MSHTML 6.00.2900.5848" name=GENERATOR>
+</HEAD>
+<BODY 
+style="BACKGROUND-POSITION-Y: -120px; BACKGROUND-IMAGE: url(images/bg.gif); BACKGROUND-REPEAT: repeat-x">
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+    <TR>
+      <TD width=10 height=29><IMG src="images/bg_left_tl.gif"></TD>
+      <TD style="FONT-SIZE: 18px; BACKGROUND-IMAGE: url(images/bg_left_tc.gif); COLOR: white; FONT-FAMILY: system">Main 
+        Menu</TD>
+      <TD width=10><IMG src="images/bg_left_tr.gif"></TD>
+    </TR>
+    <TR>
+      <TD style="BACKGROUND-IMAGE: url(images/bg_left_ls.gif)"></TD>
+      <TD id=menuTree style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; HEIGHT: 100%; BACKGROUND-COLOR: white"  vAlign=top></TD>
+      <TD style="BACKGROUND-IMAGE: url(images/bg_left_rs.gif)"></TD>
+    </TR>
+    <TR>
+      <TD width=10><IMG src="images/bg_left_bl.gif"></TD>
+      <TD style="BACKGROUND-IMAGE: url(images/bg_left_bc.gif)"></TD>
+      <TD width=10><IMG src="images/bg_left_br.gif"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<SCRIPT type=text/javascript>
+	var tree = null;
+	var root = new TreeNode('系统菜单');
+	var fun1 = new TreeNode('用户管理');
+	var fun2 = new TreeNode('用户管理', 'content/userManager/userManager.jsp', 'tree_node.gif', null,'tree_node.gif', null);
+	fun1.add(fun2);
+	var fun3 = new TreeNode('添加用户', 'content/userManager/addUser.jsp', 'tree_node.gif',null, 'tree_node.gif', null);
+	fun1.add(fun3);
+	root.add(fun1);
+	var fun5 = new TreeNode('权限管理');
+	var fun6 = new TreeNode('角色管理', 'content/roleManager/roleManager.jsp', 'tree_node.gif', null,'tree_node.gif', null);
+	fun5.add(fun6);
+	var fun4 = new TreeNode('添加角色', 'content/roleManager/addRole.jsp', 'tree_node.gif', null,'tree_node.gif', null);
+	fun5.add(fun4);
+	var fun7 = new TreeNode('角色成员管理', 'content/roleManager/roleMemberManager.jsp', 'tree_node.gif', null,'tree_node.gif', null);
+	fun5.add(fun7);
+	root.add(fun5);
+	var fun9 = new TreeNode('商品管理');
+	var fun10 = new TreeNode('商品添加', 'content/goodsManager/addGoods.jsp', 'tree_node.gif', null,'tree_node.gif', null);
+	fun9.add(fun10);
+	var fun11 = new TreeNode('商品查询', 'content/goodsManager/searchGoods.jsp', 'tree_node.gif', null,'tree_node.gif', null);
+	fun9.add(fun11);
+	var fun12 = new TreeNode('商品分类', 'content/goodsManager/addGoodsType.jsp', 'tree_node.gif', null,'tree_node.gif', null);
+	fun9.add(fun12);
+	root.add(fun9);
+	var fun13 = new TreeNode('商品订单管理');
+	var fun14 = new TreeNode('订单查询', 'content/goodsOrderManager/goodsOrderManager.html', 'tree_node.gif', null,'tree_node.gif', null);
+	fun13.add(fun14);
+
+	root.add(fun13);
+	var fun16 = new TreeNode('系统管理');
+	var fun17 = new TreeNode('销售报表管理', 'content/develop.html', 'tree_node.gif', null,'tree_node.gif', null);
+	fun16.add(fun17);
+	var fun18 = new TreeNode('销售排行榜管理', 'content/develop.html', 'tree_node.gif', null,'tree_node.gif', null);
+	fun16.add(fun18);
+	var fun19 = new TreeNode('操作日志管理', 'content/develop.html', 'tree_node.gif',null, 'tree_node.gif', null);
+	fun16.add(fun19);
+	var fun20 = new TreeNode('支付接口管理', 'content/develop.html', 'tree_node.gif', null,'tree_node.gif', null);
+	fun16.add(fun20);
+	var fun21 = new TreeNode('天气预报管理', 'content/develop.html', 'tree_node.gif', null,'tree_node.gif', null);
+	fun16.add(fun21);
+	root.add(fun16);
+	tree = new Tree(root);
+	tree.show('menuTree')
+</SCRIPT>
+
+</BODY>
+</HTML>

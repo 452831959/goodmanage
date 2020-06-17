@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateUser</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.UpdateUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FlagUserServlet</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.FlagUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddGoodServlet</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.AddGoodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ScanGoodServlet</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.ScanGoodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddGoodsTypeServlet</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.AddGoodsTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditDelGoodsServlet</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.EditDelGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateGoodsServlet</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.UpdateGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddRoleServlet</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.AddRoleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddGoodsType</servlet-name>
+    <servlet-class>net.hunau.goodsmanager.servlet.AddGoodsType</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/servlet/AddUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUser</servlet-name>
+    <url-pattern>/servlet/UpdateUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FlagUserServlet</servlet-name>
+    <url-pattern>/servlet/FlagUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddGoodServlet</servlet-name>
+    <url-pattern>/servlet/AddGoodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ScanGoodServlet</servlet-name>
+    <url-pattern>/servlet/ScanGoodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddGoodsTypeServlet</servlet-name>
+    <url-pattern>/servlet/AddGoodsTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditDelGoodsServlet</servlet-name>
+    <url-pattern>/servlet/EditDelGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateGoodsServlet</servlet-name>
+    <url-pattern>/servlet/UpdateGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddRoleServlet</servlet-name>
+    <url-pattern>/servlet/AddRoleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddGoodsType</servlet-name>
+    <url-pattern>/servlet/AddGoodsType</url-pattern>
+  </servlet-mapping>
+
+</web-app>
